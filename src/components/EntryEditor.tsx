@@ -61,10 +61,10 @@ const Entry: FC<EditorProps> = ({ sdk }) => {
       type: "screen",
       name: value.title,
       screenId: value.title,
-      backgroundImage: backgroundImg?.fields?.file[
+      backgroundImage: backgroundImg?.fields?.file?.[
         sdk.locales.default
       ] as ImageFileDetails,
-      maskImage: rolloverImg?.fields?.file[
+      maskImage: rolloverImg?.fields?.file?.[
         sdk.locales.default
       ] as ImageFileDetails,
       areas: value.areas || [],

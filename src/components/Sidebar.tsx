@@ -97,10 +97,10 @@ const Sidebar = ({ sdk }: SidebarProps) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sdk, selectedArea]);
 
-  const bgImg = backgroundImg?.fields?.file[
+  const bgImg = backgroundImg?.fields?.file?.[
     sdk.locales.default
   ] as ImageFileDetails;
-  const roImg = rolloverImg?.fields?.file[
+  const roImg = rolloverImg?.fields?.file?.[
     sdk.locales.default
   ] as ImageFileDetails;
 
